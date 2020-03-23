@@ -80,7 +80,7 @@
                                     <i class="tiny material-icons" style="color:grey;">backspace</i>
                                 </a>
                                 <form action="#" onsubmit="resultBtn()">
-                                    <input id="input" onsubmit="resultBtn()" type="text" value="" autocomplete="off">
+                                    <input id="input" onsubmit="resultBtn()" type="number" value="" autocomplete="off">
                                     <label for="input"></label>
                                 </form>
                             </div>
