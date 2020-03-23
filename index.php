@@ -17,9 +17,9 @@
             <a href="#" class="brand-logo">Calculadora</a>
         </div>
     </nav>
-    <ul id="slide-out" class="sidenav sidenav-fixed">
-        <li><a href="#!">First Sidebar Link</a></li>
-        <li><a href="#!">Second Sidebar Link</a></li>
+    <ul id="slide-out" class="sidenav sidenav-fixed  blue lighten-4">
+        <li><a href="https://github.com/jrrj67">My Github</a></li>
+        <li><a href="https://www.linkedin.com/in/jos%C3%A9-ricardo-rocha-587157135/">My Linkedin</a></li>
     </ul>
 </header>
 <main>
@@ -65,10 +65,13 @@
                         </div>
                         <div class="row">
                             <div class="">
-                                <a class="col l5 push-l2 s5 push-s2 waves-effect waves-light btn" onclick="typeNumber(0)">0</a>
+                                <a class="col l2 push-l2 s2 push-s2 waves-effect waves-light btn" onclick="typeNumber('.')">.</a>
+                            </div>
+                            <div class="">
+                                <a class="col l2 push-l3 s2 push-s3 waves-effect waves-light btn" onclick="typeNumber(0)">0</a>
                             </div>
                             <div class="center">
-                                <a class="col l2 push-l3 s2 push-s3 waves-effect waves-light btn" onclick="clearBtn()">C</a>
+                                <a class="col l2 push-l4 s2 push-s4 waves-effect waves-light btn" onclick="clearBtn()">C</a>
                             </div>
                         </div>
                         <div class="row">
