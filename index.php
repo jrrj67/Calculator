@@ -11,7 +11,7 @@
 </head>
 <body>
 <header>
-    <nav class="hide-on-med-and-up">
+    <nav class="hide-on-med-and-up blue lighten-4">
         <div class="nav-wrapper">
             <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up"><i class="material-icons">menu</i></a>
             <a href="#" class="brand-logo">Calculadora</a>
@@ -78,6 +78,9 @@
                             <div class="divider"></div>
                         </div>
                         <div class="row">
+                            <div class="col l8">
+                                <span id="history" style="color: grey"></span>
+                            </div>
                             <div class="input-field col l12">
                                 <a class="col l3 push-l10 s2 push-s10 z-depth-0 transparent btn" onclick="backSpace()">
                                     <i class="tiny material-icons" style="color:grey;">backspace</i>
@@ -160,8 +163,9 @@
 
         ajax.onreadystatechange = function () {
             if (ajax.readyState == 4 && ajax.status == 200) {
-                var response = ajax.responseText;
-                document.getElementById('input').value = response;
+                var response = JSON.parse(ajax.responseText);
+                document.getElementById('input').value = response.result;
+                document.getElementById('history').innerText = response.history;
             }
         }
     }
